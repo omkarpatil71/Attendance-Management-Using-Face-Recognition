@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <div class="container text-center" style="align-self: center; width: 650px;">
+    <div class="row" style="align-self: center;">
+      <div class="col" style="align-self: center;">
+        <div class="card" >
+            <img src="static/indexfc.jpg" class="card-img-top" alt="...">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} mt-3">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <p>You can go back to login page</p>
+        <a href="/studentlogin" class="btn" style="color:rgb(255, 255, 255); width:5cm; height:1cm; background-color:black; align-self:center">Login as student</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+{% endblock body %}

@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <div class="container text-center" style="align-self: center; width: 650px;">
+    <div class="row" style="align-self: center;">
+      <div class="col" style="align-self: center;">
+        <div class="card" >
+            <img src="static/indexfc.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="align-self: center;">
+              <h5 class="card-title">Welcome to Face-Recognition based Attendance System</h5>
+              <p>if you want to add face data click register new student</p>
+              <a href="/add_student" class="btn" style="color:rgb(255, 255, 255); width:5cm; height:1cm; background-color:black">Register new student</a>
+              <a href="/studentlogin" class="btn" style="color:rgb(255, 255, 255); width:5cm; height:1cm; background-color:black">Login as student</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+{% endblock body %}

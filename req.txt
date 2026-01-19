@@ -1,0 +1,9 @@
+flask
+flask-pymongo
+numpy
+opencv-python
+pandas
+scikit-learn
+matplotlib
+werkzeug
+pillow
